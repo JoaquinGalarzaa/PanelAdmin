@@ -496,9 +496,6 @@ function App() {
               </div>
             </div>
           )}
-
-
-
           {/* COTIZADOR EXPRESS */}
           {activeTab === "cotizador" && (
             <div className="flex flex-col gap-6 max-w-4xl">
@@ -638,9 +635,6 @@ function App() {
               </div>
             </div>
           )}
-
-
-
           {/* CLIENTES */}
           {activeTab === "clientes" && (
             <div className="flex flex-col gap-6">
@@ -670,7 +664,6 @@ function App() {
               </div>
             </div>
           )}
-
           {/* CONFIGURACIÓN */}
           {activeTab === "config" && (
             <form onSubmit={handleGuardarConfig} className="flex flex-col gap-6 max-w-4xl">
@@ -732,7 +725,6 @@ function App() {
               </div>
             </form>
           )}
-
           {activeTab === "etiquetas" && (
             <div className="grid grid-cols-2 gap-4">
               {catalogo.map((prod) => (
@@ -743,7 +735,7 @@ function App() {
                 </div>
               ))}
             </div>
-       )}
+          )}
         </main>
       </div>
 
