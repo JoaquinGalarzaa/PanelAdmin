@@ -17,10 +17,13 @@
   --radius: 0.5rem;
 }
 
-/* Estilos globales base opcionales para que todo ensamble limpio */
-@layer base {
-  :root {
-    background-color: var(--background);
-    color: var(--foreground);
-  }
+/* Forzamos al HTML y al Body a ocupar el 100% real de la pantalla */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #020617; /* bg-slate-950 en hex */
+  color: #f8fafc; /* text-slate-100 en hex */
+  overflow: hidden;
 }
